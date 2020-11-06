@@ -35,6 +35,7 @@ function settime(data,success=true,statusCode=200) {
 @integer(60,70) 60 到 70 之间的整数
 @boolean boolean 类型 true,false*/
 
+
 export default{
 	getTestDate:(params) => settime(
 		Mock.mock({

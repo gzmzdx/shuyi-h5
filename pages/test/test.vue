@@ -4,6 +4,7 @@
     <button @click="message">调用message</button>
     <text>详细页面配置和Api请查看c-page组件文档</text>
 	saefsdfgse
+	aaaaa
   </c-page>
 </template>
 

@@ -3,7 +3,8 @@
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
 		"^c-(.*)": "@/components/c-$1/index.vue"
 	},
-	"pages": [{
+	"pages": [
+		{
 			"path": "pages/h5-my/h5-my",
 			"style": {}
 		},
@@ -19,6 +20,9 @@
 			}
 		}, {
 			"path": "pages/test/test",
+			"style": {}
+		}, {
+			"path": "pages/h5-home/h5-home",
 			"style": {}
 		}
 	],
@@ -37,6 +41,9 @@
 		}, {
 			"pagePath": "pages/test/test",
 			"text": "测试"
+		}, {
+			"pagePath": "pages/h5-home/h5-home",
+			"text": "首页"
 		}]
 	},
 	"condition": { //模式配置，仅开发期间生效

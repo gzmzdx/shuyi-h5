@@ -22,9 +22,10 @@ Email: 15870290085@163.com
 
 |属性名 |是否必填 |	类型 |	默认值 |	说明 |
 |-------|---------|--------|-----|-----|
+|title |否 |	String |	首页 |	页面标题 |
 |scroll-y |否 |	Boolean |	true |	是否开启垂直滚动 |
 |refresher-enabled |否 |	Boolean |	false |	是否开启下拉刷新 |
-|refresher-triggered |否 |	Boolean |	false |	当前是否处于下拉刷新状态 |
+|refresher-triggered |否 |	Boolean |	false |	当前是否处于下拉刷新状态（开启下拉刷新时有效） |
 |tabbar |否 |	Boolean |	false |	是否显示全局的tabbar |
 |border-bottom |否 |	Boolean |	true |	是否显示导航栏下边框 |
 |type |否 |	String |	full |	full,content.full为全屏，content内容区域会有一个统一的padding |
@@ -55,7 +56,6 @@ this.$xxxxx调用方式已经弃用
 ## **loadingOpen loadingDown**
 
 `c-loading` 组件调用方式
-
 
 **loadingOpen(config)**
 
@@ -122,18 +122,4 @@ loadingDown()//关闭loading
 > message与loading一致，全局都只使用一个message组件，当你在一个message未结束时开启一个新的message会直接覆盖掉原来的message
 
 
-
-
-
-
-
-## ~~this.$pageStack~~
-已弃用
-
-
-~~改数组中存放的是路由栈中每一个页面中的 page 组件实例，最后一个为当前页面的page，倒数第二个为上一个页面的 page。~~<br/>
-
->  ~~请勿修改该数组,会导致返回功能异常。~~
-
-~~可以借助此调用其中 page 组件的方法~~
 

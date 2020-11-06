@@ -15,7 +15,7 @@ list: [{
         selectedIconPath: "home-fill",
         text: '首页',
         customIcon: false,
-        pagePath: "/pages/h5-my/h5-my"
+        pagePath: "/pages/h5-home/h5-home"
       },
         {
           iconPath: "grid",
