@@ -1,0 +1,30 @@
+{
+  "name": "shuyi-h5",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mockjs": "^1.1.0",
+    "art-template": "^4.13.2",
+    "chalk": "^4.1.0",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "execa": "^4.0.3",
+    "inquirer": "^7.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "cct": "node ./cliShell/createComponent.js",
+    "commit": "git-cz",
+    "addAll": "git add -A",
+    "gitFlow": "npm run addAll && npm run commit && git push"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
