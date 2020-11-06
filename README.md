@@ -28,7 +28,9 @@ shell依赖
 **安装依赖**
 ```shell
 # 使用npm
-npm instal
+npm install
+# 或者
+npm i
 # 使用yarn
 yarn
 ```
@@ -203,7 +205,7 @@ yarn
 
 规范说明参考 gitCommit.md
 
-拉取最新代码 `git push`命令或者直接点webstorm的拉取按钮<br/>
+拉取最新代码 `git pull`命令或者直接点webstorm的拉取按钮<br/>
  使用 `npm run addAll` 命令将所有文件添加至git变更中,当然你也可以使用git  add命令来指定要add的文件<br/>
  使用 `npm run commit` 命令提交当前变更<br/>
  选择     提交类型<br/>

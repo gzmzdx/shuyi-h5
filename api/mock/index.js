@@ -6,5 +6,6 @@
 *所以我们只是采用简单的mock+promise的方式进行本地模拟*/
 
 import home from "./home"
+import test from "./test"
 
-export {home}
+export {home,test}
