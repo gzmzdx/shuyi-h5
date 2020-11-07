@@ -7,17 +7,27 @@
 			<text @tap="chooseAvatar" class="c-link">更换头像</text>
 		</view>
 		<u-cell-group title="账号信息">
-			<u-cell-item title="昵称" :value="userinfo.nickname"></u-cell-item>
-			<u-cell-item title="用户名" :value="userinfo.username"></u-cell-item>
-			<u-cell-item title="绑定微信号" :value="userinfo.weChat"></u-cell-item>
-			<u-cell-item title="绑定qq号" :value="userinfo.qq"></u-cell-item>
+			<navigator url="/pages/h5-my/update/h5-my-update">
+				<u-cell-item title="昵称" :value="userinfo.nickname"></u-cell-item>
+			</navigator>
+			<u-cell-item title="用户名" :arrow="false" :value="userinfo.username"></u-cell-item>
+			<u-cell-item title="绑定微信号" :arrow="false" :value="userinfo.weChat"></u-cell-item>
+			<u-cell-item title="绑定qq号" :arrow="false" :value="userinfo.qq"></u-cell-item>
 		</u-cell-group>
 		<u-cell-group title="个人信息">
-			<u-cell-item title="姓名" :value="userinfo.name"></u-cell-item>
-			<u-cell-item title="性别" :value="userinfo.sex===1?'男':'女'"></u-cell-item>
+			<navigator url="/pages/h5-my/update/h5-my-update">
+				<u-cell-item title="姓名" :value="userinfo.name"></u-cell-item>
+			</navigator>
+			<navigator url="/pages/h5-my/update/h5-my-update">
+				<u-cell-item title="性别" :value="userinfo.sex"></u-cell-item>
+			</navigator>
 			<u-cell-item title="手机号" :value="userinfo.phone.hide('*',3,-4)"></u-cell-item>
-			<u-cell-item title="真实地址" :value="userinfo.address"></u-cell-item>
-			<u-cell-item title="收获地址" :value="userinfo.delivery_address"></u-cell-item>
+			<navigator url="/pages/h5-my/update/h5-my-update">
+				<u-cell-item title="真实地址" :value="userinfo.address"></u-cell-item>
+			</navigator>
+			<navigator url="/pages/h5-my/update/h5-my-update">
+				<u-cell-item title="收货地址" :value="userinfo.delivery_address"></u-cell-item>
+			</navigator>
 		</u-cell-group>
 	</c-page>
 </template>
@@ -35,7 +45,7 @@
 					weChat: "wangming1571356682",
 					qq: "1571356682",
 					name: "王明",
-					sex: 1,
+					sex: "男",
 					phone: "15870290085",
 					address: "贵州省贵阳市贵安新区党武乡贵州民族大学",
 					delivery_address: "贵州省贵阳市贵安新区党武乡贵州民族大学"
