@@ -25,7 +25,11 @@
 			"path": "pages/h5-home/h5-home",
 			"style": {}
 		}
-	],
+	    ,{
+            "path" : "pages/h5-my/update/h5-my-update",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationStyle": "custom",
 		"backgroundColor": "#F8F8F8"
